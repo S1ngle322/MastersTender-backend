@@ -1,0 +1,6 @@
+# Default ignored files
+/.idea/workspace.xml
+/node_modules
+.idea
+tenderbase.iml
+package-lock.json
