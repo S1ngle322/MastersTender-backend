@@ -7,7 +7,7 @@ export class BaseModel {
         if (object !== null) {
             for (const member in object) {
                 if (member !== '__v') {
-                    // @ts-ignore
+                    // @ts-ignore TODO: revisit
                     this[member] = object[member];
                 }
             }
