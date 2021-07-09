@@ -34,5 +34,5 @@ const userSchema = new mongoose.Schema(
     }
 );
 
-const UserModel = mongoose.model<User & mongoose.Document>(UserType.USER, userSchema);
+const UserModel = BaseUserModel.discriminator<User & mongoose.Document>(UserType.USER, userSchema);
 export default UserModel;

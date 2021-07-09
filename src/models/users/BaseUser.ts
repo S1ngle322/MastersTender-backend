@@ -27,6 +27,7 @@ export const baseUserSchema = new mongoose.Schema(
     isVerified: { type: Boolean, default: false },
     type: { type: String, required: true, immutable: true },
     },
+    {discriminatorKey: "type", timestamps: true}
 );
 baseUserSchema.plugin(uniqueValidator);
 

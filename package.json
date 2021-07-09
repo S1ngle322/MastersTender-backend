@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node -r dotenv/config src/app.ts",
-    "dev": "nodemon -r dotenv/config src/app.ts"
+    "dev": "nodemon -r dotenv/config src/app.ts",
+    "initdata": "npm run build && ts-node -r dotenv/config src/utils/initdataScript.ts"
   },
   "keywords": [],
   "author": "",
