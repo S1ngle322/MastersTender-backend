@@ -19,8 +19,7 @@ export class User extends BaseUser implements Authoraziable {
 
 }
 
-const userSchema = new mongoose.Schema(
-    {
+const userSchema = new mongoose.Schema({
         name:                 { type: String, required: true },
         surname:              { type: String, required: true },
         middle_name:          { type: String, required: true },

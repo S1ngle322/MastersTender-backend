@@ -16,5 +16,21 @@
     "amount_of_children": 0,
     "country": "Belarus",
     "city": "Brest"
+  },
+  {
+    "id": "60e84518d11b691fbc6ef94e",
+    "type": "ADMIN",
+    "email": "email_admin",
+    "password": "password_admin",
+    "isVerified": true,
+    "username": "username_admin"
+  },
+  {
+    "id": "60e84669344dec179a63e30c",
+    "type": "SUPER_ADMIN",
+    "email": "email_super_admin",
+    "password": "password_super_admin",
+    "isVerified": true,
+    "username": "username_super_admin"
   }
 ]
