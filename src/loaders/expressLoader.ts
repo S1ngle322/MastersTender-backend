@@ -3,6 +3,7 @@ import { Response, Request, NextFunction, Router } from 'express';
 import log from '../utils/winston';
 import container from "../utils/containerCI";
 import Controller from "../types/classes/Controller";
+import Types from "../types/enums/DITypes";
 
 function loadControllers(): Router {
     const router = Router();
