@@ -1,0 +1,36 @@
+[
+  {
+    "id": "60e8189b6bd8b4bf2d3c7892",
+    "type": "USER",
+    "email": "email_user",
+    "password": "password_user",
+    "isVerified": true,
+    "username": "username_user",
+    "name": "user_name",
+    "surname": "user_surname",
+    "middle_name": "middle_name_user",
+    "age": 21,
+    "work_experience": 2,
+    "position": "developer",
+    "marital_status": "married",
+    "amount_of_children": 0,
+    "country": "Belarus",
+    "city": "Brest"
+  },
+  {
+    "id": "60e84518d11b691fbc6ef94e",
+    "type": "ADMIN",
+    "email": "email_admin",
+    "password": "password_admin",
+    "isVerified": true,
+    "username": "username_admin"
+  },
+  {
+    "id": "60e84669344dec179a63e30c",
+    "type": "SUPER_ADMIN",
+    "email": "email_super_admin",
+    "password": "password_super_admin",
+    "isVerified": true,
+    "username": "username_super_admin"
+  }
+]
