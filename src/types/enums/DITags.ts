@@ -9,3 +9,4 @@ enum DITags {
 
     PAYMENT = "PAYMENT",
 }
+export default DITags;

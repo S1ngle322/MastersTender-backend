@@ -5,6 +5,11 @@ import log from "./winston";
 import mongooseLoader from "../loaders/mongooseLoader";
 import AdminModel from "../models/users/Administrator";
 import SuperAdminModel from "../models/users/SuperAdmin";
+import ShopModel from "../models/business/Shop";
+import MasterModel from "../models/business/Master";
+import TeamModel from "../models/business/Team";
+import MeasurerModel from "../models/business/Measurer";
+import DesignerModel from "../models/business/Designer";
 
 const initJson = requireDir("../../data");
 
@@ -19,6 +24,25 @@ const loadUsers = async (): Promise<void> => {
 
         if (user.type === UserType.SUPER_ADMIN)
             new SuperAdminModel(user).save();
+    });
+};
+
+const loadSellers = async(): Promise<void> => {
+    initJson.sellers.map((seller: {type: UserType}) => {
+        if (seller.type === UserType.SHOP)
+            new ShopModel(seller).save();
+
+        if (seller.type === UserType.MASTER)
+            new MasterModel(seller).save();
+
+        if (seller.type === UserType.MEASURER)
+            new MeasurerModel(seller).save();
+
+        if (seller.type === UserType.DESIGNER)
+            new DesignerModel(seller).save();
+
+        if (seller.type === UserType.TEAM)
+            new TeamModel(seller).save();
     });
 };
 
