@@ -1,7 +1,6 @@
 //В данном файле у нас генерируются рефреш токены и рефрешаться непосредственно
 import {inject, injectable, named} from "inversify";
 import jwt from "jsonwebtoken";
-//import TokenPayload from "../types/classes/TokenPayload";
 import TokenSet from "classes/TokenSet";
 import Tags from "../types/enums/DITags";
 import Types from "enums/DITypes";

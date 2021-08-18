@@ -1,6 +1,6 @@
 import BaseSellerModel, {BaseSeller} from "./BaseSeller";
 import mongoose from "mongoose";
-import UserType from "enums/UserType";
+import UserType from "../../types/enums/UserType";
 
 export class Shop extends BaseSeller {}
 

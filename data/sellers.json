@@ -1,11 +1,11 @@
 [
   {
-    "id": "611b8d2d47a45ddc843166e8",
+    "id": "611b8d2d47a45ddc843166e3",
     "type": "SHOP",
     "email": "email_shop",
     "password": "password_shop",
     "isVerified": true,
-    "username": "username_user",
+    "username": "username_shop",
     "company_name": "shop_company_name",
     "unp": "910101273",
     "legal_address": "Kolotushkino street",
@@ -16,7 +16,7 @@
     "subscription_type": "dorogo-pizdec"
   },
   {
-    "id": "611b9403f2be0ae4521acd8c",
+    "id": "611b9403f2be0ae4521acd82",
     "type": "MASTER",
     "email": "email_master",
     "password": "password_master",
@@ -32,7 +32,7 @@
     "subscription_type": "deshevo-pizdec"
   },
   {
-    "id": "611b94f00cc44e55d6c81fbc",
+    "id": "611b94f00cc44e55d6c81fb1",
     "type": "DESIGNER",
     "email": "email_designer",
     "password": "password_designer",
@@ -48,7 +48,7 @@
     "subscription_type": "srednee-pizdec"
   },
   {
-    "id": "611b95adbdc14a55908fe839",
+    "id": "611b95adbdc14a55908fe831",
     "type": "MEASURER",
     "email": "email_measurer",
     "password": "password_measurer",
@@ -64,7 +64,7 @@
     "subscription_type": "dorogo-pizdec"
   },
   {
-    "id": "611b96038536d8a6f74101ae",
+    "id": "611b96038536d8a6f74101a4",
     "type": "TEAM",
     "email": "email_team",
     "password": "password_team",

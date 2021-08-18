@@ -1,6 +1,6 @@
-import {BaseModel} from "classes/BaseModel";
+import {BaseModel} from "../../types/classes/BaseModel";
 import Authorizable from "interfaces/Authorizable";
-import UserType from "enums/UserType";
+import UserType from "../../types/enums/UserType";
 import mongoose from "mongoose";
 import uniqueValidator from "mongoose-unique-validator";
 import {BaseUser, baseUserSchema} from "../users/BaseUser";
@@ -42,6 +42,7 @@ export const baseSellerSchema = new mongoose.Schema(
      email: {type: String, default: ""},
      password: {type: String},
      isVerified: {type: Boolean, default: false},
+     type: { type: String, required: true, immutable: true },
     },
     {discriminatorKey: "type", timestamps: true}
 );

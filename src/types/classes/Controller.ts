@@ -32,13 +32,6 @@ export default Controller;
 
 
 
-function helloworld(){
-    console.log("Hi, pediki!")
-}
-
-let massage: () => void = helloworld;
-massage();
-
 
 
 

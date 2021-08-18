@@ -5,7 +5,7 @@
     "email": "email_user",
     "password": "password_user",
     "isVerified": true,
-    "username": "username_user",
+    "username": "username_user1",
     "name": "user_name",
     "surname": "user_surname",
     "middle_name": "middle_name_user",
@@ -23,7 +23,7 @@
     "email": "email_admin",
     "password": "password_admin",
     "isVerified": true,
-    "username": "username_admin"
+    "username": "username_admin1"
   },
   {
     "id": "60e84669344dec179a63e30c",
@@ -31,6 +31,6 @@
     "email": "email_super_admin",
     "password": "password_super_admin",
     "isVerified": true,
-    "username": "username_super_admin"
+    "username": "username_super_admin1"
   }
 ]

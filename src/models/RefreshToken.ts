@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
-//import{ BaseModel } from "classes/BaseModel";//возможна ошибка в пути
+import{BaseModel} from "../types/classes/BaseModel";
 import {User} from "./users/User";
-import {BaseModel} from "classes/BaseModel";
-
 export class RefreshToken extends BaseModel { //базовая модель для рефреш токена, для удобства
     user:User["_id"];
     value: string;

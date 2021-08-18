@@ -1,6 +1,6 @@
 import BaseSellerModel, {BaseSeller} from "./BaseSeller";
 import mongoose from "mongoose";
-import UserType from "enums/UserType";
+import UserType from "../../types/enums/UserType";
 import MasterModel from "./Master";
 import {BaseModel} from "classes/BaseModel";
 
