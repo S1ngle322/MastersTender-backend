@@ -2,8 +2,8 @@ import { inject, injectable, named} from "inversify";
 import { RefreshToken } from "../models/RefreshToken"
 import RefreshTokenRepository from "../repositories/RefreshTokenRepository";
 //import DITags from "../types/enums";
-import DITypes from "enums/DITypes";
-import DITags from "enums/DITags";
+import DITypes from "../types/enums/DITypes";
+import DITags from "../types/enums/DITags";
 
 @injectable()
     class RefreshTokenService {

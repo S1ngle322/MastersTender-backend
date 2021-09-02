@@ -3,7 +3,7 @@ import {inject, injectable, named} from "inversify";
 import jwt from "jsonwebtoken";
 import TokenSet from "classes/TokenSet";
 import Tags from "../types/enums/DITags";
-import Types from "enums/DITypes";
+import Types from "../types/enums/DITypes";
 import {
     JWT_ACCESS_LIFETIME,
     JWT_ACCESS_SECRET,
