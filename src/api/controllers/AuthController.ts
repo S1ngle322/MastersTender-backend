@@ -12,7 +12,6 @@ import Authorizable from "interfaces/Authorizable";
 import log from "winston";
 import {User} from "../../models/users/User";
 
-
 @injectable()
 class AuthController extends Controller {
 
@@ -33,7 +32,10 @@ class AuthController extends Controller {
         this.router.post(this.path, this.localAuth);
     }
 
+
+
     localAuth = async (req: Request, res: Response, next: NextFunction) =>  {
+        log.info("test_1");
         log.info("local auth function");
         try {
             passport.authenticate("local",
@@ -43,16 +45,18 @@ class AuthController extends Controller {
                     eClient: Authorizable & BaseModel,
                     info: IVerifyOptions,
                 ) => {
+                    log.info("test_2");
                     try {
                         if (err) {
                             return next(err);
                         }
-
+                        log.info("test_3");
                         if (!eClient) {
                             // @ts-ignore
                             return await res.json("no credentials provided");
                         }
                         else {
+                            log.info("test_4");
                             // @ts-ignore
                             req.login(eClient, {session: false}, async () => {
                                 if (err) {
