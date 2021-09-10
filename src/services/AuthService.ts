@@ -1,5 +1,5 @@
 //В данном файле у нас генерируются рефреш токены и рефрешаться непосредственно
-import {inject, injectable, named} from "inversify";
+import { inject, injectable, named } from "inversify";
 import jwt from "jsonwebtoken";
 import TokenSet from "classes/TokenSet";
 import Tags from "../types/enums/DITags";
@@ -12,6 +12,7 @@ import {
 } from "../utils/secrets";
 import RefreshTokenService from "./RefreshTokenService";
 import TokenPayload from "classes/TokenPayload";
+import "reflect-metadata";
 
 @injectable()
 class AuthService {

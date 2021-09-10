@@ -1,6 +1,7 @@
 import express from 'express';
 import log from './utils/winston';
 import load from './loaders/index';
+import "reflect-metadata";
 
 const startServer = async (): Promise<void> => {
     const app = express();

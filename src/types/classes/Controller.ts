@@ -2,6 +2,9 @@ import { injectable } from 'inversify';
 import jwt from 'jsonwebtoken';
 import { Router, Request } from 'express';
 import UnauthorizedError from "../exceptions/UnauthorizedError";
+import "reflect-metadata";
+
+
 @injectable()
 abstract class Controller {
 
