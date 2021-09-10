@@ -2,12 +2,13 @@ import mongoose from "mongoose";
 import Repository from "../types/interfaces/Repository";
 import { unmanaged, injectable } from "inversify";
 import EntityNotFoundError from "../types/exceptions/EntityNotFoundError";
+import "reflect-metadata";
 
 @injectable()
 abstract class BaseRepository<T> implements Repository<T> {
     public readonly _model: mongoose.Model<T & mongoose.Document>;
 
-    constructor(@unmanaged() modelName: string) {
+    constructor(@unmanaged() modelName: string) {//@unmanaged
         this._model = mongoose.model<T & mongoose.Document>(modelName);
     }
 

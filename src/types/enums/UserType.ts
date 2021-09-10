@@ -5,7 +5,7 @@ enum UserEnum {
 
     MASTER = "MASTER",
     SHOP = "SHOP",
-    DESIGNER = "DESIGNERE",
+    DESIGNER = "DESIGNER",
     MEASURER = "MEASURER",
     TEAM = "TEAM",
 
@@ -16,4 +16,4 @@ enum UserEnum {
     TIKTOK_CLIENT = "TIKTOK_CLIENT"
 }
 
-export default UserEnum
+export default UserEnum;
